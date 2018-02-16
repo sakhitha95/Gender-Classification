@@ -1,0 +1,195 @@
+public class FMeasure {
+    public static int noun=0;
+    public static int adjective=0;
+    public static int adverbs=0,prepos=0,verbs=0,interjun=0,pronouns=0,art=0;
+    
+    
+    public static void main(String[] args) {
+    
+     try
+    {
+         String host = "jdbc:mysql://localhost:3306/ml";
+        String uName = "root";
+        String uPass= "root";
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection con = DriverManager.getConnection(host,uName,uPass);
+        Statement stmt = con.createStatement( );
+        String SQL = "SELECT * FROM pos_blog";
+        ResultSet rs= stmt.executeQuery( SQL );
+        while(rs.next( )){
+        
+        String sentence = rs.getString("tag_blog");
+        String gender = rs.getString("gender");
+        //if(gender.equals("M")){
+            extractNounsByRegex(sentence).toString();
+            extractADJByRegex(sentence).toString();
+            extractPreposByRegex(sentence).toString();
+            extractVERBByRegex(sentence).toString();
+            extractPRPByRegex(sentence).toString();
+            extractAdvByRegex(sentence).toString();
+            extractIntByRegex(sentence).toString();
+        //}
+        /*else if(gender.equals("F")){
+            extractNounsByRegex(sentence).toString();
+            extractADJByRegex(sentence).toString();
+            extractPreposByRegex(sentence).toString();
+            extractVERBByRegex(sentence).toString();
+            extractPRPByRegex(sentence).toString();
+            extractAdvByRegex(sentence).toString();
+            extractIntByRegex(sentence).toString();
+        }*/
+        
+        //System.out.println(extractNounsByRegex(sentence).toString());
+        //System.out.println(extractADJByRegex(sentence).toString());
+        //System.out.println(sentence);
+        double f_measure=0.5*((noun+adjective+prepos+art)-(pronouns+verbs+adverbs+interjun)+100);
+        PreparedStatement pstmt = con.prepareStatement("insert into f_measure (f_measure,gender) values (?,?)");
+        pstmt.setDouble(1,f_measure);
+        pstmt.setString(2,gender);
+        pstmt.executeUpdate();
+        //PreparedStatement pstmt = con.prepareStatement("insert into pos (NN,JJ) values (?,?)");
+      //pstmt.setString(1,extractNounsByRegex(sentence).toString());
+      //pstmt.setString(2,extractAdjByRegex(sentence).toString());
+      //pstmt.executeUpdate();
+        
+    }
+        
+        //double f_measure=0.5*((noun+adjective+prepos+art)-(pronouns+verbs+adverbs+interjun)+100);
+     //   System.out.println(f_measure);
+    }
+    catch ( SQLException err ) {
+System.out.println( err.getMessage( ) );
+                                    }
+    catch (final ClassNotFoundException e) {
+        e.printStackTrace();}
+}
+public static final String NOUN_REGEX = "[a-zA-Z]*_NN\\w?\\w?\\b";
+
+public static ArrayList<String> extractNounsByRegex(String sentenceWithTags) {
+    ArrayList<String> nouns = new ArrayList<String>();
+    String[] words = sentenceWithTags.split("\\s+");
+    for (int i = 0; i < words.length; i++) {
+        if(words[i].matches(NOUN_REGEX)) {
+            //System.out.println(" Matched ");
+            //remove the suffix _NN* and retain  [a-zA-Z]*
+            noun=noun+1;
+                nouns.add(words[i].replaceAll("_NN\\w?\\w?\\b", ""));
+                
+            }
+        }
+        return nouns;
+    }
+
+public static final String ADJ_REGEX = "[a-zA-Z]*_JJ\\w?\\w?\\b";
+
+public static ArrayList<String> extractADJByRegex(String sentenceWithTags) {
+    ArrayList<String> adjectives = new ArrayList<String>();
+    String[] words = sentenceWithTags.split("\\s+");
+    for (int i = 0; i < words.length; i++) {
+        if(words[i].matches(ADJ_REGEX)) {
+            //System.out.println(" Matched ");
+            //remove the suffix _NN* and retain  [a-zA-Z]*
+            adjective=adjective+1;
+                adjectives.add(words[i].replaceAll("_JJ\\w?\\w?\\b", ""));
+                
+            }
+        }
+        return adjectives;
+    }
+public static final String ADV_REGEX = "[a-zA-Z]*_RB\\w?\\w?\\b";
+
+public static ArrayList<String> extractAdvByRegex(String sentenceWithTags) {
+    ArrayList<String> adverb = new ArrayList<String>();
+    String[] words = sentenceWithTags.split("\\s+");
+    for (int i = 0; i < words.length; i++) {
+        if(words[i].matches(ADV_REGEX)) {
+            //System.out.println(" Matched ");
+            //remove the suffix _NN* and retain  [a-zA-Z]*
+            adverbs=adverbs+1;
+                adverb.add(words[i].replaceAll("_RB\\w?\\w?\\b", ""));
+                
+            }
+        }
+        return adverb;
+    }
+public static final String INT_REGEX = "[a-zA-Z]*_UH\\w?\\w?\\b";
+
+public static ArrayList<String> extractIntByRegex(String sentenceWithTags) {
+    ArrayList<String> interjunction = new ArrayList<String>();
+    String[] words = sentenceWithTags.split("\\s+");
+    for (int i = 0; i < words.length; i++) {
+        if(words[i].matches(INT_REGEX)) {
+            //System.out.println(" Matched ");
+            //remove the suffix _NN* and retain  [a-zA-Z]*
+            interjun=interjun+1;
+                interjunction.add(words[i].replaceAll("_UH\\w?\\w?\\b", ""));
+                
+            }
+        }
+        return interjunction;
+    }
+public static final String PRP_REGEX = "[a-zA-Z]*_PRP\\w?\\w?\\b";
+
+public static ArrayList<String> extractPRPByRegex(String sentenceWithTags) {
+    ArrayList<String> pronoun = new ArrayList<String>();
+    String[] words = sentenceWithTags.split("\\s+");
+    for (int i = 0; i < words.length; i++) {
+        if(words[i].matches(PRP_REGEX)) {
+            //System.out.println(" Matched ");
+            //remove the suffix _NN* and retain  [a-zA-Z]*
+            pronouns=pronouns+1;
+                pronoun.add(words[i].replaceAll("_PRP\\w?\\w?\\b", ""));
+                
+            }
+        }
+        return pronoun;
+    }
+public static final String ART_REGEX = "[a-zA-Z]*_DT\\w?\\w?\\b";
+
+public static ArrayList<String> extractArtByRegex(String sentenceWithTags) {
+    ArrayList<String> article = new ArrayList<String>();
+    String[] words = sentenceWithTags.split("\\s+");
+    for (int i = 0; i < words.length; i++) {
+        if(words[i].matches(ART_REGEX)) {
+            //System.out.println(" Matched ");
+            //remove the suffix _NN* and retain  [a-zA-Z]*
+            art=art+1;
+                article.add(words[i].replaceAll("_DT\\w?\\w?\\b", ""));
+                
+            }
+        }
+        return article;
+    }
+public static final String VERB_REGEX = "[a-zA-Z]*_VB\\w?\\w?\\b";
+
+public static ArrayList<String> extractVERBByRegex(String sentenceWithTags) {
+    ArrayList<String> verb = new ArrayList<String>();
+    String[] words = sentenceWithTags.split("\\s+");
+    for (int i = 0; i < words.length; i++) {
+        if(words[i].matches(VERB_REGEX)) {
+            //System.out.println(" Matched ");
+            //remove the suffix _NN* and retain  [a-zA-Z]*
+            verbs=verbs+1;
+                verb.add(words[i].replaceAll("_VB\\w?\\w?\\b", ""));
+                
+            }
+        }
+        return verb;
+    }
+public static final String PREPOS_REGEX = "[a-zA-Z]*_IN\\w?\\w?\\b";
+public static ArrayList<String> extractPreposByRegex(String sentenceWithTags) {
+    ArrayList<String> preposition = new ArrayList<String>();
+    String[] words = sentenceWithTags.split("\\s+");
+    for (int i = 0; i < words.length; i++) {
+        if(words[i].matches(PREPOS_REGEX)) {
+            //System.out.println(" Matched ");
+            //remove the suffix _NN* and retain  [a-zA-Z]*
+            prepos=prepos+1;
+               preposition.add(words[i].replaceAll("_IN\\w?\\w?\\b", ""));
+            }
+        }
+        return preposition;
+    }
+    
+}
+

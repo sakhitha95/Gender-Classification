@@ -1,0 +1,338 @@
+(lp0
+S'PRP$'
+p1
+aS'RB PRP'
+p2
+aS'NNP IN'
+p3
+aS'NN IN'
+p4
+aS'DT VB'
+p5
+aS'VBZ VB'
+p6
+aS'WDT'
+p7
+aS'JJ'
+p8
+aS'WP'
+p9
+aS', IN'
+p10
+aS'RB ,'
+p11
+aS'NN TO'
+p12
+aS'NNP NN'
+p13
+aS'NNP NNP'
+p14
+aS'NN VBZ'
+p15
+aS'RP'
+p16
+aS'DT NN'
+p17
+aS'FW'
+p18
+aS','
+p19
+aS'RP VBP'
+p20
+aS'PRP VB'
+p21
+aS'PRP'
+p22
+aS'RB'
+p23
+aS'IN IN'
+p24
+aS'RP VBZ'
+p25
+aS'NN PRP'
+p26
+aS'NN VBD'
+p27
+aS'NNP'
+p28
+aS'. RB'
+p29
+aS'WRB'
+p30
+aS'NN WDT'
+p31
+aS'IN PRP'
+p32
+aS'JJ IN'
+p33
+aS'VBZ IN'
+p34
+aS'VBD PRP'
+p35
+aS'CC JJ'
+p36
+aS'MD VB'
+p37
+aS'PRP IN'
+p38
+aS'IN VB'
+p39
+aS'--'
+p40
+aS'SYM'
+p41
+aS'WDT VB'
+p42
+aS'IN NN'
+p43
+aS'IN VBG'
+p44
+aS'MD RB'
+p45
+aS'NNP VB'
+p46
+aS'CC RB'
+p47
+aS'JJ ,'
+p48
+aS'VB DT'
+p49
+aS'JJ .'
+p50
+aS'VB NN'
+p51
+aS'JJ NN'
+p52
+aS', CC'
+p53
+aS'VBN IN'
+p54
+aS'IN PRP$'
+p55
+aS'DT JJ'
+p56
+aS'VB VB'
+p57
+aS'RP VB'
+p58
+aS', DT'
+p59
+aS'EX VB'
+p60
+aS'PRP .'
+p61
+aS'. IN'
+p62
+aS'RB JJ'
+p63
+aS'RP IN'
+p64
+aS'NN ,'
+p65
+aS'VBG IN'
+p66
+aS'EX'
+p67
+aS'POS NN'
+p68
+aS'PRP$ JJ'
+p69
+aS'CD NN'
+p70
+aS'. PRP'
+p71
+aS'RP VBD'
+p72
+aS'MD'
+p73
+aS'VBP RB'
+p74
+aS'VBP IN'
+p75
+aS'RB VBN'
+p76
+aS'NN RB'
+p77
+aS', PRP'
+p78
+aS'CC PRP'
+p79
+aS'VBD IN'
+p80
+aS'TO VB'
+p81
+aS'NN CC'
+p82
+aS'UH'
+p83
+aS'('
+p84
+aS'VBZ DT'
+p85
+aS', RB'
+p86
+aS'RB DT'
+p87
+aS'VBG'
+p88
+aS'VBD'
+p89
+aS'IN JJ'
+p90
+aS'VBZ RB'
+p91
+aS'VBN'
+p92
+aS'VBP DT'
+p93
+aS'VBD DT'
+p94
+aS'VBP'
+p95
+aS'VBZ'
+p96
+aS'VB PRP$'
+p97
+aS'NN'
+p98
+aS'WP VB'
+p99
+aS', NN'
+p100
+aS'.'
+p101
+aS'VB IN'
+p102
+aS'NN NN'
+p103
+aS'PRP RB'
+p104
+aS':'
+p105
+aS'PRP VBP'
+p106
+aS'CC VB'
+p107
+aS'VBD RB'
+p108
+aS'. CC'
+p109
+aS'CC'
+p110
+aS'PRP VBZ'
+p111
+aS'VBZ JJ'
+p112
+aS'CD'
+p113
+aS'PRP VBD'
+p114
+aS'CC NN'
+p115
+aS'WP$'
+p116
+aS'. NN'
+p117
+aS'IN CD'
+p118
+aS'TO DT'
+p119
+aS'PRP MD'
+p120
+aS'JJS'
+p121
+aS'JJR'
+p122
+aS'IN NNP'
+p123
+aS'VBG NN'
+p124
+aS'NNP ,'
+p125
+aS'VBP PRP'
+p126
+aS'VBG DT'
+p127
+aS'VBZ VBN'
+p128
+aS"''"
+p129
+aS'JJ JJ'
+p130
+aS'NNP .'
+p131
+aS'VBP VBN'
+p132
+aS'DT'
+p133
+aS'IN DT'
+p134
+aS'DT VBZ'
+p135
+aS')'
+p136
+aS'WRB PRP'
+p137
+aS'RP RB'
+p138
+aS'POS'
+p139
+aS'RP MD'
+p140
+aS'TO'
+p141
+aS'VBD VB'
+p142
+aS'RB .'
+p143
+aS'LS'
+p144
+aS'RB RB'
+p145
+aS'PRP$ NN'
+p146
+aS'VB'
+p147
+aS'PDT'
+p148
+aS'RBS'
+p149
+aS'RBR'
+p150
+aS'NN .'
+p151
+aS'. NNP'
+p152
+aS'VB PRP'
+p153
+aS'NN VB'
+p154
+aS'DT NNP'
+p155
+aS'IN'
+p156
+aS'NN :'
+p157
+aS'RP .'
+p158
+aS'RB VB'
+p159
+aS'NNPS'
+p160
+aS', VB'
+p161
+aS'RB IN'
+p162
+aS'CC DT'
+p163
+aS'VB JJ'
+p164
+aS'NNP VBZ'
+p165
+aS'VBP VB'
+p166
+aS'NNP CC'
+p167
+aS'. DT'
+p168
+a.

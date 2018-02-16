@@ -1,0 +1,486 @@
+(lp0
+S'. PRP VBP'
+p1
+aS'PRP$'
+p2
+aS'VB DT NN'
+p3
+aS'RB PRP'
+p4
+aS'NNP IN'
+p5
+aS'NN IN'
+p6
+aS'DT VB'
+p7
+aS'IN DT NN'
+p8
+aS'VBZ VB'
+p9
+aS'WDT'
+p10
+aS'. PRP VBD'
+p11
+aS'JJ'
+p12
+aS'WP'
+p13
+aS'IN PRP VB'
+p14
+aS', IN'
+p15
+aS'RB ,'
+p16
+aS'NN TO'
+p17
+aS'NNP NN'
+p18
+aS'NNP NNP'
+p19
+aS'NN VBZ'
+p20
+aS'RP'
+p21
+aS'PRP$ NN NN'
+p22
+aS'DT NN'
+p23
+aS'FW'
+p24
+aS','
+p25
+aS'RP VBP'
+p26
+aS'RP RB VB'
+p27
+aS'PRP VB'
+p28
+aS'PRP'
+p29
+aS'RB'
+p30
+aS'IN IN'
+p31
+aS'RP VBZ'
+p32
+aS'RP VBP VB'
+p33
+aS'NN PRP'
+p34
+aS'NN VBD'
+p35
+aS'NNP'
+p36
+aS'. RB'
+p37
+aS'WRB'
+p38
+aS'NN WDT'
+p39
+aS'IN PRP VBP'
+p40
+aS'IN PRP'
+p41
+aS'VBZ DT NN'
+p42
+aS'NN TO VB'
+p43
+aS'JJ IN'
+p44
+aS'VBG DT NN'
+p45
+aS'CC PRP VB'
+p46
+aS'VBZ IN'
+p47
+aS'NN . PRP'
+p48
+aS'VBD PRP'
+p49
+aS'CC JJ'
+p50
+aS'MD VB'
+p51
+aS'PRP$ JJ NN'
+p52
+aS'PRP IN'
+p53
+aS'IN VB'
+p54
+aS'--'
+p55
+aS'DT NN IN'
+p56
+aS'VB PRP$ NN'
+p57
+aS'SYM'
+p58
+aS'WDT VB'
+p59
+aS'IN DT JJ'
+p60
+aS'IN NN'
+p61
+aS'IN VBG'
+p62
+aS'IN DT NNP'
+p63
+aS'MD RB'
+p64
+aS'NNP VB'
+p65
+aS'CC RB'
+p66
+aS'JJ ,'
+p67
+aS'VB DT'
+p68
+aS'JJ .'
+p69
+aS'JJ NN IN'
+p70
+aS'VB NN'
+p71
+aS'PRP RB VB'
+p72
+aS'WRB PRP VB'
+p73
+aS'JJ NN'
+p74
+aS', CC'
+p75
+aS'VBN IN'
+p76
+aS'IN PRP$'
+p77
+aS'MD RB VB'
+p78
+aS'DT JJ'
+p79
+aS'RP VBP DT'
+p80
+aS'IN NNP NN'
+p81
+aS'RP MD VB'
+p82
+aS'VB VB'
+p83
+aS'RP VB'
+p84
+aS', DT'
+p85
+aS'NN IN NN'
+p86
+aS'EX VB'
+p87
+aS'PRP .'
+p88
+aS'. IN'
+p89
+aS'RB JJ'
+p90
+aS'RP IN'
+p91
+aS'TO VB DT'
+p92
+aS'VBP RB VB'
+p93
+aS'. PRP VB'
+p94
+aS'NN IN DT'
+p95
+aS'PRP VBP RB'
+p96
+aS'NN ,'
+p97
+aS'VBG IN'
+p98
+aS'JJ NN ,'
+p99
+aS'EX'
+p100
+aS'POS NN'
+p101
+aS'PRP$ JJ'
+p102
+aS'CD NN'
+p103
+aS'. PRP'
+p104
+aS'RP VBD'
+p105
+aS'MD'
+p106
+aS'VBP RB'
+p107
+aS'VBP IN'
+p108
+aS'RB VBN'
+p109
+aS'NN RB'
+p110
+aS', PRP'
+p111
+aS'TO DT NN'
+p112
+aS'CC PRP'
+p113
+aS'VBD IN'
+p114
+aS'TO VB'
+p115
+aS'NN CC'
+p116
+aS'UH'
+p117
+aS'('
+p118
+aS'VBZ DT'
+p119
+aS'IN PRP$ NN'
+p120
+aS'PRP MD VB'
+p121
+aS', RB'
+p122
+aS'NN . NN'
+p123
+aS'RB DT'
+p124
+aS'VBG'
+p125
+aS'NN , CC'
+p126
+aS', PRP VB'
+p127
+aS'VBD'
+p128
+aS'IN JJ'
+p129
+aS'VBZ RB'
+p130
+aS'VBN'
+p131
+aS'VBP DT'
+p132
+aS'VBD DT'
+p133
+aS'VBP'
+p134
+aS'JJ NN NN'
+p135
+aS'VBZ'
+p136
+aS'RB PRP VB'
+p137
+aS'TO VB IN'
+p138
+aS'TO VB NN'
+p139
+aS'DT NN NN'
+p140
+aS'VB PRP$'
+p141
+aS'. DT NN'
+p142
+aS'NN'
+p143
+aS'WP VB'
+p144
+aS', NN'
+p145
+aS'.'
+p146
+aS'VB IN'
+p147
+aS'NN NN'
+p148
+aS'NN , PRP'
+p149
+aS'RP VBP RB'
+p150
+aS'PRP RB'
+p151
+aS':'
+p152
+aS'JJ JJ NN'
+p153
+aS'NN IN NNP'
+p154
+aS'PRP VBP'
+p155
+aS'CC VB'
+p156
+aS'VBD RB'
+p157
+aS'. CC'
+p158
+aS'CC'
+p159
+aS'PRP VBZ'
+p160
+aS'VBZ JJ'
+p161
+aS'CD'
+p162
+aS'PRP VBD'
+p163
+aS'CC NN'
+p164
+aS'WP$'
+p165
+aS'PRP$ NN IN'
+p166
+aS'. NN'
+p167
+aS'IN CD'
+p168
+aS'TO DT'
+p169
+aS'NN CC NN'
+p170
+aS'PRP MD'
+p171
+aS'NN IN PRP$'
+p172
+aS'NN . DT'
+p173
+aS'JJS'
+p174
+aS'JJR'
+p175
+aS'PRP$ NN .'
+p176
+aS'IN NNP'
+p177
+aS'VBP DT NN'
+p178
+aS'JJ NN .'
+p179
+aS'VBG NN'
+p180
+aS'NNP ,'
+p181
+aS'PRP$ NN VB'
+p182
+aS'VBP PRP'
+p183
+aS'VBG DT'
+p184
+aS'VBD DT NN'
+p185
+aS'NN IN PRP'
+p186
+aS'VBZ VBN'
+p187
+aS"''"
+p188
+aS'JJ JJ'
+p189
+aS'NNP .'
+p190
+aS'VBP VBN'
+p191
+aS'DT'
+p192
+aS'DT NN VBZ'
+p193
+aS'IN DT'
+p194
+aS'DT VBZ'
+p195
+aS'DT JJ NN'
+p196
+aS'NN PRP VB'
+p197
+aS'NNP NNP NN'
+p198
+aS'IN PRP$ JJ'
+p199
+aS')'
+p200
+aS'WRB PRP'
+p201
+aS'RP RB'
+p202
+aS'POS'
+p203
+aS'RP MD'
+p204
+aS'TO'
+p205
+aS'VBD VB'
+p206
+aS'RB .'
+p207
+aS'LS'
+p208
+aS'NN , NN'
+p209
+aS'IN JJ NN'
+p210
+aS'RB RB'
+p211
+aS'PRP$ NN'
+p212
+aS'VB'
+p213
+aS'PDT'
+p214
+aS'DT NN .'
+p215
+aS'DT NN ,'
+p216
+aS'PRP VBP VB'
+p217
+aS'DT NNP NN'
+p218
+aS'RBS'
+p219
+aS'RBR'
+p220
+aS'NN .'
+p221
+aS'. NNP'
+p222
+aS'VB PRP'
+p223
+aS'NN VB'
+p224
+aS'DT NNP'
+p225
+aS'IN'
+p226
+aS'NN :'
+p227
+aS'RP .'
+p228
+aS'IN NNP NNP'
+p229
+aS'RB VB'
+p230
+aS'NNPS'
+p231
+aS'DT NN VB'
+p232
+aS'TO VB PRP'
+p233
+aS', VB'
+p234
+aS'RB IN'
+p235
+aS'CC DT'
+p236
+aS'VBP TO VB'
+p237
+aS'VB JJ'
+p238
+aS'NNP VBZ'
+p239
+aS'VBP VB'
+p240
+aS'NNP CC'
+p241
+aS'. DT'
+p242
+a.
